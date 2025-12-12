@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль сотрудника</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-block">
+            <div class="company-name">
+                <span class="company-title">Hueta</span>
+                <span class="company-logo">H</span>
+            </div>
+            <div class="photo-upload">
+                <input type="file" id="photo-input" accept="image/*" class="photo-input">
+                <label for="photo-input" class="photo-label">
+                    <img id="profile-photo" src="https://via.placeholder.com/150" alt="Фото профиля" class="profile-photo">
+                    <div class="upload-icon">+</div>
+                </label>
+            </div>
+            <div class="employee-info">
+                <h2>Лобач Ольга Олеговна</h2>
+                <p>Разработчик Python</p>
+            </div>
+            <div class="nav-buttons">
+                <button>Сотрудники</button>
+                <button>Статистика</button>
+                <button>График отпусков</button>
+            </div>
+        </div>
+        <div class="right-block">
+            <h1>Профиль сотрудника</h1>
+            <div class="employee-details">
+                <div class="detail-row">
+                    <label for="full-name">ФИО:</label>
+                    <input type="text" id="full-name" value="Лобач Ольга Олеговна" readonly class="detail-input">
+                </div>
+                <div class="detail-row">
+                    <label>Присутствие на рабочем месте:</label>
+                    <div class="presence-status">
+                        <span>Присутствует</span>
+                        <span class="status-dot"></span>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <label>Контактная информация:</label>
+                </div>
+                <div class="detail-row">
+                    <label>Телефон:</label>
+                    <span>+7*********</span>
+                </div>
+                <div class="detail-row">
+                    <label>Email:</label>
+                    <span>example@email.com</span>
+                </div>
+                <div class="detail-row">
+                    <span id="vacation-info" class="vacation-info">
+                        Информация об отпусках
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
